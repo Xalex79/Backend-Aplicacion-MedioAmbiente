@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express(); // Inicializar express
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 // Verifica que FRONTEND_URL esté definido en tu archivo .env
 const frontendUrl = process.env.FRONTEND_URL as string;

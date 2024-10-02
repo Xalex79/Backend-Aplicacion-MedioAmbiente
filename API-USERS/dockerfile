@@ -1,0 +1,26 @@
+# Usamos una imagen base con Node.js (puede ser la versión LTS o una específica)
+FROM node:18-alpine
+
+# Establecemos el directorio de trabajo en el contenedor
+WORKDIR /src/app
+
+# Copiamos el archivo package.json y package-lock.json (si existe)
+COPY package*.json ./
+
+# Instalamos las dependencias del proyecto
+RUN npm install
+
+# Si estás usando dependencias dev (como ts-node), usa:
+# RUN npm install --only=production
+
+# Copiamos el resto de los archivos del proyecto al contenedor
+COPY . .
+
+# Instalamos ts-node globalmente en caso de que no esté en las dependencias del proyecto
+RUN npm install -g ts-node
+
+# Expone el puerto que el servicio va a utilizar (si aplica, cambia según tu aplicación)
+EXPOSE 3000
+
+# Comando para ejecutar tu aplicación usando ts-node
+CMD ["ts-node", "./src/app.ts"]
