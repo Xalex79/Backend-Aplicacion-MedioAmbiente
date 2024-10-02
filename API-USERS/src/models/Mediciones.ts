@@ -22,7 +22,8 @@ const MedicionSchema: Schema = new Schema<Medicion>(
   },
   {
     timestamps: true,
-    versionKey: false
+    versionKey: false,
+    collection: "mediciones" // Especificar el nombre de la colección aquí
   }
 );
 
