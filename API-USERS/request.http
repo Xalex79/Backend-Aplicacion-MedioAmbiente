@@ -13,10 +13,10 @@ POST http://localhost:3000/api/v1/mediciones/ HTTP/1.1
 Content-Type: application/json
 
 {
-  "Concrentracion_ppm": "9",
-  "temperatura": "10",
-  "latitud": "11",
-  "longitud": "12"
+  "Concrentracion_ppm": "21",
+  "temperatura": "25",
+  "latitud": "13524581",
+  "longitud": "1254125842"
 }
 
 ### Recoger todas las mediciones del servidor
