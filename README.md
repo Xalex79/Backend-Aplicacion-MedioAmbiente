@@ -3,13 +3,21 @@
 Repositorios:
 
 Arduino:
+
 *(https://github.com/Xalex79/Arduino-SparkFun-Beacon-Ozono---3-GTI)
+
 Android:
+
 *(https://github.com/Xalex79/Android-Beacon-a-Backend)
+
 Frontend:
+
 *(https://github.com/Xalex79/Forntend-Aplicacion-MedioAmbiente)
+
 Backend:
+
 *(https://github.com/Xalex79/Backend-Aplicacion-MedioAmbiente)
+
 
 Descripción del proyecto:
 
