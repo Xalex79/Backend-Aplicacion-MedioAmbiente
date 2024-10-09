@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./ # Adjust this path if necessary
+      dockerfile: Dockerfile  # Make sure this Dockerfile exists in your backend directory
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development  # Adjust as needed
+    # Add any other necessary configurations for your backend
+
+  frontend:
+    build:
+      context: ./../../../../Sprint 0 Alex/Frontend-Aplicacion-MedioAmbiente/Forntend-Aplicacion-MedioAmbiente/frontend-aplicacion-medioambiente  # Adjust this path if necessary
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    # Add any other necessary configurations for your frontend
+
+# Add volumes if you need persistent data storage
+volumes:
+  backend-data:
+  frontend-data:
+
+# Add networks if you need custom networking
+networks:
+  app-network:
+    driver: bridge

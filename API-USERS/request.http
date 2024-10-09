@@ -1,0 +1,33 @@
+
+### Subir al servidor una medida
+POST http://localhost:3000/api/v1/mediciones/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "Concrentracion_ppm": "21",
+  "temperatura": "25",
+  "latitud": "13524581",
+  "longitud": "1254125842"
+}
+
+### Recoger todas las mediciones del servidor
+GET http://localhost:3000/api/v1/mediciones/ HTTP/1.1
+
+### Recoger especifico por _id del servidor
+##GET http://localhost:3000/api/v1/mediciones/66fb071ea7b17758a1b21db0 HTTP/1.1
+
+### Actualizar algun campo de dato (por _id) del servidor
+##PUT http://localhost:3000/api/v1/mediciones/66fb071ea7b17758a1b21db0 HTTP/1.1
+##PUT http://localhost:3000/api/v1/mediciones/<_ID AQUI> HTTP/1.1
+
+##Content-Type: application/json
+##{
+##  "Concrentracion_ppm": "21",
+##  "temperatura": "25",
+##  "latitud": "13524581",
+##  "longitud": "1254125842"
+##}
+
+### Eliminar del servidor por _id
+##DELETE http://localhost:3000/api/v1/mediciones/66fb071ea7b17758a1b21db0 HTTP/1.1
+##DELETE http://localhost:3000/api/v1/mediciones/<_ID AQUI> HTTP/1.1
