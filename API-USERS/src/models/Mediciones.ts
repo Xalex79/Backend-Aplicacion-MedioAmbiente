@@ -1,6 +1,15 @@
 import mongoose, { Schema } from "mongoose";
 import { Medicion } from "types/MedicionesTypes";
 
+/**
+* @brief Define el esquema para un documento de medición en la colección MongoDB.
+* @author Alejandro Rosado
+* @property {number} Concrentracion_ppm - La concentración en partes por millón.
+* @property {number} temperatura - La temperatura en grados.
+* @property {number} latitud - La coordenada de latitud.
+* @property {number} longitud - La coordenada de longitud.
+*/
+
 const MedicionSchema: Schema = new Schema<Medicion>(
   {
     Concrentracion_ppm: {

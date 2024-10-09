@@ -99,6 +99,6 @@ Al usar entre otras cosas, REACT, el frontend se irá actualizando sin necesidad
 
 
 
-- Como ejecutar los tests (de la carpeta test, usando un comando como npm tests o algo asi):
+- Como ejecutar los tests:
 
-Los tests en la carpeta "test" son útiles para comprobar que todo funciona, se llaman a la vez con un simple comando en la terminal y comprueban automáticamente, y de manera independiente al código diferentes partes del proyecto para detectar posibles errores antes de continuar con la prueba final del proyecto. Es una forma muy sencilla de hacer debugging para errores comunes que te pueden ayudar a saber que parte de la cadena desde Arduino hasta el Frontend falla. Para probar los tests, sencillamente abre la terminal de tu editor de código, estando en la carpeta correspondiente, y escribe "". Si todo va bien se te informará al instante. Si hay algún problema podrás saber que test ha fallado. 
+Los tests en la carpeta "test" son útiles para comprobar que todo funciona, se llaman a la vez con un simple comando en la terminal y comprueban automáticamente, y de manera independiente al código diferentes partes del proyecto para detectar posibles errores antes de continuar con la prueba final del proyecto. Es una forma muy sencilla de hacer debugging para errores comunes que te pueden ayudar a saber que parte de la cadena desde Arduino hasta el Frontend falla. Para probar los tests, sencillamente abre la terminal de tu editor de código, estando en la carpeta correspondiente, y escribe "npm test". Si todo va bien se te informará al par de segundos. Si hay algún problema podrás saber que test ha fallado. 

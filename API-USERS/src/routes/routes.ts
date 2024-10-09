@@ -3,6 +3,10 @@ import { MedicionRepository } from "@repositories/medicionRepositories";
 import { MedicionService } from "@services/medicionService";
 import { IMedicionRepository, IMedicionService, Medicion } from "types/MedicionesTypes";
 
+/**
+* @brief Define las rutas de la API para el manejo de datos de medición.
+* @author Alejandro Rosado
+*/
 const router = Router();
 
 // Inicialización de repositorios y servicios

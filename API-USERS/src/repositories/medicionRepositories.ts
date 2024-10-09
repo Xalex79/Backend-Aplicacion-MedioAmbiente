@@ -1,7 +1,19 @@
 import { MedicionModel } from "@models/Mediciones";
 import { IMedicionRepository, Medicion } from "types/MedicionesTypes";
 
+/**
+* @brief Proporciona métodos de acceso a datos para el modelo Medicion.
+* @author Alejandro Rosado
+* @implements {IMedicionRepository}
+*/
 export class MedicionRepository implements IMedicionRepository {
+
+  /**
+  * Crea una nueva medida.
+  * @param {Medicion} data - Los datos de la medida.
+  * @returns {Promise<Medicion>} - La medida creada.
+  * Comentarios similares para find (buscar), findById (buscar por id), update (actualizar valor), delete (borrar medida)
+  */
   async create(data: Medicion): Promise<Medicion> {
     const newMedicion = new MedicionModel(data);
     return await newMedicion.save();

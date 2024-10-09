@@ -1,5 +1,10 @@
 import { IMedicionRepository, IMedicionService, Medicion } from "types/MedicionesTypes";
 
+/**
+ * @brief Implementa los métodos del servicio de mediciones, delegando las operaciones en el repositorio correspondiente.
+ * @author Alejandro Rosado
+ * @implements {IMedicionService}
+ */
 export class MedicionService implements IMedicionService {
   private medicionRepository: IMedicionRepository;
 
